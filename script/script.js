@@ -47,7 +47,7 @@ rollBtn.addEventListener("click", function () {
   if (canPlay) {
     const random = Math.trunc(Math.random() * 6) + 1;
     diceImg.classList.remove("dice-hidden");
-    diceImg.src = `/image/dice-${random}.png`;
+    diceImg.src = `image/dice-${random}.png`;
 
     if (random !== 1) {
       currentScore += random;
