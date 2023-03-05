@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(to top right, #231926, #c8343a);
+  height: 100vh;
+  font-family: "Nunito", sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+h1,
+h3 {
+  text-align: center;
+  color: #fff;
+}
+h1 {
+  padding: 10px 0 15px;
+}
+h3 {
+  padding-bottom: 15px;
+}
+.grid {
+  display: grid;
+}
+.main-box {
+  display: flex;
+  margin: auto;
+  position: relative;
+  background-image: linear-gradient(45deg, #6c3535, #b96060b3);
+  box-shadow: 0 3rem 5rem rgb(0 0 0 / 25%);
+  border-radius: 10px;
+}
+
+.box {
+  width: 425px;
+  height: 550px;
+  padding: 65px;
+}
+.player {
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+.player-active {
+  background-color: rgb(255 255 255 / 55%);
+  transition: all 0.5s;
+}
+.winner {
+  background-color: rgb(0 0 0 / 40%);
+  color: rgb(229 90 26);
+}
+.total-score {
+  margin: 10px auto 10.5rem;
+  text-align: center;
+  font-size: 50px;
+  font-weight: normal;
+}
+.score-box {
+  width: 12rem;
+  height: 7rem;
+  text-align: center;
+  border-radius: 9px;
+  padding: 1.2rem;
+  font-size: 22px;
+  color: #fff;
+  margin: auto;
+  background-color: #c7365f;
+}
+.current-text {
+  padding-bottom: 5px;
+}
+.current-score {
+  font-size: 38px;
+}
+
+.btn {
+  text-transform: uppercase;
+  font-size: 14px;
+  position: absolute;
+  cursor: pointer;
+  left: 42%;
+  background-color: #f8f8f8c9;
+  width: 145px;
+  border: none;
+  font-weight: 600;
+  border-radius: 24px;
+  height: 44px;
+}
+.btn:hover {
+  transition: all 0.3s ease;
+  background-color: #fff;
+}
+.new-game-btn {
+  top: 14%;
+}
+.roll-btn {
+  bottom: 30%;
+}
+.hold-btn {
+  bottom: 18%;
+  width: 110px;
+  left: 44%;
+}
+.dice-img {
+  position: absolute;
+  width: 4.8rem;
+  left: 45%;
+  top: 36%;
+  box-shadow: rgb(38 57 77) 0px 20px 30px -10px;
+  border-radius: 20px;
+}
+.dice-hidden {
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+  .box {
+    width: 330px;
+    height: 500px;
+    padding: 30px;
+  }
+
+  .player {
+    font-size: 35px;
+  }
+  .total-score {
+    font-size: 42px;
+  }
+  .score-box {
+    width: 9rem;
+    height: 5rem;
+    padding: 0.2rem;
+    font-size: 20px;
+  }
+  .current-score {
+    font-size: 33px;
+  }
+  .dice-img {
+    width: 3.5rem;
+    left: 45.5%;
+    top: 36%;
+    border-radius: 12px;
+  }
+  .btn {
+    font-size: 10.5px;
+    left: 43.5%;
+    width: 90px;
+    height: 32px;
+  }
+  .hold-btn {
+    width: 67px;
+    left: 45%;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .box {
+    width: 265px;
+    height: 435px;
+    padding: 28px 10px 20px;
+  }
+  .player {
+    font-size: 25px;
+  }
+  .total-score {
+    font-size: 32px;
+  }
+  .current-score {
+    font-size: 28px;
+  }
+  .dice-img {
+    width: 3rem;
+  }
+  .score-box {
+    width: 8rem;
+    height: 5rem;
+    padding: 0.4rem;
+  }
+  .btn {
+    font-size: 10px;
+    left: 41%;
+    width: 82px;
+    height: 27px;
+  }
+  .hold-btn {
+    left: 43%;
+    width: 63px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  h1 {
+    font-size: 17px;
+  }
+  h3 {
+    font-size: 11px;
+  }
+  .box {
+    width: 176px;
+    height: 388px;
+    padding: 23px;
+  }
+  .player {
+    font-size: 20px;
+  }
+
+  .total-score {
+    margin: 10px auto 9.5rem;
+    font-size: 30px;
+  }
+
+  .score-box {
+    width: 6rem;
+    height: 4.3rem;
+    border-radius: 9px;
+    padding: 8px;
+    font-size: 16px;
+  }
+
+  .current-text {
+    padding-bottom: 0px;
+  }
+
+  .current-score {
+    font-size: 23px;
+  }
+
+  .new-game-btn {
+    top: 13%;
+  }
+
+  .btn {
+    font-size: 9px;
+    left: 40%;
+    width: 75px;
+    border-radius: 16px;
+    height: 29px;
+  }
+  roll-btn {
+    bottom: 27%;
+  }
+  .hold-btn {
+    bottom: 13%;
+    width: 59px;
+    left: 42%;
+  }
+
+  .dice-img {
+    width: 2.5rem;
+    left: 45%;
+    top: 37%;
+    border-radius: 10px;
+  }
+}

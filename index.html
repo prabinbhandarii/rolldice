@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Roll Dice</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="script/script.js" defer></script>
+  </head>
+  <body>
+    <h1>Roll Dice</h1>
+    <h3>
+      If you Roll a "1", You will loose your current points, Hold it to secure.
+    </h3>
+    <div class="grid">
+      <div class="main-box">
+        <div class="box left-box player-active">
+          <h2 class="player player-0">Player 1</h2>
+          <h2 class="left-total-score total-score-0 total-score">0</h2>
+          <div class="score-box">
+            <p class="current-text">Current</p>
+            <p class="left-current-score current-score-0 current-score">0</p>
+          </div>
+        </div>
+        <div class="box right-box">
+          <h2 class="player player-1">Player 2</h2>
+          <h2 class="right-total-score total-score-1 total-score">0</h2>
+          <div class="score-box">
+            <p class="current-text">Current</p>
+            <p class="right-current-score current-score-1 current-score">0</p>
+          </div>
+        </div>
+        <button class="btn new-game-btn">New game</button>
+        <button class="btn roll-btn">Roll Dice</button>
+        <button class="btn hold-btn">Hold</button>
+        <img src="/image/dice-1.png" alt="Dice" class="dice-img dice-hidden" />
+      </div>
+    </div>
+  </body>
+</html>
