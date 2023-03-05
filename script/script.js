@@ -70,7 +70,7 @@ holdBtn.addEventListener("click", function () {
       totalScore[activePlayer];
 
     // condition if anyone wins the game
-    if (totalScore[activePlayer] >= 20) {
+    if (totalScore[activePlayer] >= 100) {
       canPlay = false;
       document.querySelector(`.player-${activePlayer}`).textContent =
         "Winner!!!";
